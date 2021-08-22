@@ -11,11 +11,12 @@ class PlayState extends FlxState
 	var enemyname:String;
 	var jumpSplash:FlxSplash;
 	var bossname:String;
+	var upgrades:Array<String>;
 	var bosstitle:String; // this is underneath boss name
 	var ground:FlxSprite;
 	var ninjaguy:FlxSprite;
-	var playerhealth:Int = 3;
-	var	health:Int;
+	var playerhealth:Int;
+	var	enemyhealth:Int;
 	override public function create()
 	{
 		super.create();
@@ -35,6 +36,7 @@ class PlayState extends FlxState
 		*/
 	}
 
+	
 	override public function update(elapsed:Float)
 	{
 		super.update(elapsed);

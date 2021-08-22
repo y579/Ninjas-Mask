@@ -15,7 +15,7 @@ class PlayState extends FlxState
 	var ground:FlxSprite;
 	var ninjaguy:FlxSprite;
 	var playerhealth:Int = 3;
-	var	health:Int;
+	var health:Int;
 	override public function create()
 	{
 		super.create();

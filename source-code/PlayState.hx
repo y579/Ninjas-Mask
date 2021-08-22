@@ -27,7 +27,16 @@ class PlayState extends FlxState
 
 		ninjaguy = new FlxSprite();
 		ninjaguy.loadGraphic(AssetPaths.NinjaSprite__png);
+		ninjaguy.setGraphicSize(Std.int(ninjaguy.height *2));
 		add(ninjaguy);
+		switch (swordupgrades) {
+			case ['Rusty Sword']: damage = 1;
+			case ['Samurai Sword']: damage = 3;
+			default: ['Rusty Sword'];
+				
+		}
+				
+		};
 		/*
 		 switch (enemyname) 
 		{
@@ -38,7 +47,8 @@ class PlayState extends FlxState
 
 		}
 		*/
-	}
+
+	
 
 	
 	override public function update(elapsed:Float)

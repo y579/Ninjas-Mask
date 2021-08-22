@@ -23,17 +23,7 @@ class PlayState extends FlxState
 		ninjaguy = new FlxSprite();
 		ninjaguy.loadGraphic(AssetPaths.NinjaSprite__png);
 		add(ninjaguy);
-
-	}
-		
-		
-	override public function update(elapsed:Float)
-	{
-		super.update(elapsed);
-		if (FlxG.keys.justReleased.ESCAPE)
-			FlxG.switchState(new TitleState());
-		}
-				/*
+		/*
 		 switch (enemyname) 
 		{
 				
@@ -43,4 +33,12 @@ class PlayState extends FlxState
 
 		}
 		*/
+	}
+
+	override public function update(elapsed:Float)
+	{
+		super.update(elapsed);
+		if (FlxG.keys.justReleased.ESCAPE)
+			FlxG.switchState(new TitleState());
+		}
 }

@@ -4,7 +4,7 @@ package;
 
 
 
-class TileMapState extends FlxSprite
+class TileMapState extends FlxState
 {
   
 }

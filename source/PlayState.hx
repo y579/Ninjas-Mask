@@ -11,10 +11,14 @@ class PlayState extends FlxState
 	var enemyname:String;
 	var jumpSplash:FlxSplash;
 	var bossname:String;
-	var upgrades:Array<String>;
+	var swordupgrades:Array<Dynamic> = [
+		['Rusty Sword', 'Samurai Sword', 'Golden Sword', 'Void Sword']
+	];
+	var sworddesc:String;
 	var bosstitle:String; // this is underneath boss name
 	var ground:FlxSprite;
 	var ninjaguy:FlxSprite;
+	var damage:Int;
 	var playerhealth:Int;
 	var	enemyhealth:Int;
 	override public function create()

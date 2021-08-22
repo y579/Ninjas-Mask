@@ -21,7 +21,7 @@ class PlayState extends FlxState
 		super.create();
 
 		ninjaguy = new FlxSprite();
-		ninjaguy.loadGraphic(AssetPaths.NinjaSprite.png);
+		ninjaguy.loadGraphic(AssetPaths.NinjaSprite__png);
 		add(ninjaguy);
 		/*
 		 switch (enemyname) 

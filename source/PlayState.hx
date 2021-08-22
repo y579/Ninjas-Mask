@@ -8,11 +8,14 @@ class PlayState extends FlxState
 {
 	var bosslmao:FlxSprite;
 	var enemy:FlxSprite;
+	var enemyname:String;
 	var jumpSplash:FlxSplash;
+	var bossname:String;
+	var bosstitle:String; // this is underneath boss name
 	var ground:FlxSprite;
 	var ninjaguy:FlxSprite;
 	var playerhealth:Int = 3;
-	var enemyhealth:Int = 5;
+	var	health:Int;
 	override public function create()
 	{
 		super.create();
@@ -20,6 +23,16 @@ class PlayState extends FlxState
 		ninjaguy = new FlxSprite();
 		ninjaguy.loadGraphic(AssetPaths.NinjaSprite__png);
 		add(ninjaguy);
+		/*
+		 switch (enemyname) 
+		{
+				
+		}
+		switch (bossname)
+		{
+
+		}
+		*/
 	}
 
 	override public function update(elapsed:Float)

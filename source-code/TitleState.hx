@@ -12,7 +12,7 @@ class TitleState extends FlxState
     override public function create():Void
     {
         super.create();
-        titletext = new FlxText(0, 0, FlxG.width, 'Start', 40);
+        titletext = new FlxText(200, 0, FlxG.width, 'Ninjas Mask', 40);
         titletext.setFormat(null, 32, FlxColor.PINK);
         titletext.alignment = CENTER;
         add(titletext);

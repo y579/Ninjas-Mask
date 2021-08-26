@@ -1,4 +1,4 @@
-# Ninja's-Mask is a game that im developing
+# Ninjas'-Mask is a game that im developing
 
 
 

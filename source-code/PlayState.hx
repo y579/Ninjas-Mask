@@ -62,6 +62,8 @@ class PlayState extends FlxState
 	override public function update(elapsed:Float)
 	{
 		super.update(elapsed);
+		if (enemyhealth < 0)
+			remove(enemy);
 		if (FlxG.keys.justReleased.ESCAPE)
 			FlxG.switchState(new TitleState());
 		}
